@@ -12,6 +12,10 @@ class UserController {
   allProviders(req, res) {
     return UserService.allProviders(req, res);
   }
+
+  availableProvider(req, res) {
+    return UserService.availableProvider(req, res);
+  }
 }
 
 export default new UserController();
