@@ -18,6 +18,8 @@ routes.post('/users', UserController.store);
 routes.use(authMiddleware);
 routes.put('/users', UserController.update);
 routes.get('/users/providers', UserController.allProviders);
+routes.get('/users/providers', UserController.allProviders);
+routes.get('/users/providers/:providerID/available', UserController.allProviders);
 
 routes.post('/files', upload.single('file'), FileController.store);
 
